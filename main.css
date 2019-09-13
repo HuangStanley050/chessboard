@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.chessboard {
+  display: grid;
+  grid-gap: 5px;
+  padding: 10px;
+  width: 50%;
+  height: 600px;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+}
+
+.chessboard > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px 0;
+  font-size: 30px;
+}
